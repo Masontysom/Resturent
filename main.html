@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color: white;
+}
+
+.maindiv
+{
+background-size: cover;
+background-attachment: fixed;
+hight:100px;
+width:200px;
+top:40%;
+postion:absolute;
+};
+img {
+width: 200px;
+height: 300px;
+object-fit: contain;
+};
+p,pre
+{
+color: white;
+};
+</style>
+<title>Mali</title>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-shadow: 10px 10px 10px grey;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+html{
+  background-image: url('https://www.tripsavvy.com/thmb/VTbwT0eDE4gmVGfL_-qbKSI03E0=/960x618/filters:no_upscale():max_bytes(150000):strip_icc()/72352920_137378910937330_6476192692408680448_o-dc76c26c1ee64ff2b99479d4410d57a9.jpg');
+   background-repeat: no-repeat;
+     background-attachment: fixed;  
+  background-size: cover;
+  background-attachment: fixed;  
+  background-size: cover;
+} 
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    padding: 0;
+} 
+ 
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-flex-row li a:hover{
+    background: yellow;
+}
+</style>
+</head>
+<body>
+<nav>
+        <ul class="nav-flex-row">
+            <li class="nav-item">
+                <a href="about.html">About</a>
+            </li>
+			<li class="nav-item">
+                <a href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+                <a href="Menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="shop.html">Shop</a>
+            </li>
+        </ul>
+    </nav>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/3f/1f/15/guest-room.jpg?w=900&h=-1&s=1" style="width:100%">
+  <div class="text">“Hello to You! You will find food, harmony, and laughter here.”</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://media.istockphoto.com/photos/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538?b=1&k=20&m=472899538&s=170667a&w=0&h=oGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE=" style="width:100%">
+  <div class="text">“Need food and a good place to eat? Welcome to our humble place where you can eat good food peacefully.”</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" style="width:100%">
+  <div class="text">“Joy can only be real if people look upon their life as a service and have a definite object in life outside themselves and their personal happiness.”</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="maindiv">
+</div>
+
+<h1>Over 25,000 hotels all over India </h1>
+<pre > Our restaurant have various branch in various state of India .
+In Mumbai, Delhi, Kolkata, Channei, Sikim, Tiruanathapuram, and many more.
+<img src="https://www.hospitalitynet.org/picture/xxl_153102313.jpg?t=20190621113357" alt="Italian Trulli"  width="240" height="300"></img> <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-12/21/full/1608572730-3016.jpg"alt="Italian Trulli"  width="250" height="300"></img> <img src=" https://www.fodors.com/wp-content/uploads/2017/08/taj-hero.jpg" alt="Italian Trulli"  width="280" height="300"></img> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODs-_1022evsLtWYH-Dy82IQVEH67L54BXw&usqp=CAU"alt="Italian Trulli"  width="300" height="300"></img>  <img src="https://images.livemint.com/img/2021/06/24/600x338/LSpic_1624548268980_1624548279375.jpg"alt="Italian Trulli"  width="350" height="300"></img>
+
+</pre>
+ <pre>
+yaaa.... we also have now tours and trevels to all over India.
+For more information click hear  
+booking open ..... 
+For Booking ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: yellow;
+}
+
+.active {
+  background-color: #04AA6D;
+}</style>
+<ul>
+
+<li style="float:right">
+                <a class="active" href="booking.html">Book Now!!</a>
+            </li>
+        </ul>	
+ </pre>
+ <ul class="nav-flex-row">
+<li class="nav-item">
+                <a href="contact.html">contact us</a>
+            </li>
+        </ul>
+		</p>
+		</nav>
+</body>
+</html>
