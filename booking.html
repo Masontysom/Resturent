@@ -1,0 +1,95 @@
+<html>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+html{
+  background-image: url('https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg');
+   background-repeat: no-repeat;
+     background-attachment: fixed;  
+  background-size: cover;
+  background-attachment: fixed;  
+  background-size: cover;
+} 
+h3{text-align: center;
+size: 10px;}
+
+</style>
+   <nav>
+        <ul >
+            <li >
+                <a href="shop.html">Shop</a>
+            </li>
+			<li >
+                <a href="main.html">Home</a>
+            </li>
+            <li >
+                <a href="reservation.html">Reservation</a>
+            </li>
+            <li >
+                <a href="Menu.html">Menu</a>
+            </li>
+            <li style="float:right">
+                <a class="active" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+	<P>
+        <h1><center> TRAVEL RESERVATION FORM<center></h1><br>
+		<h2>Form</h2>
+        <h2> * denotes mandatory </h2>
+        <hr>
+        <input type="text" name="passengername" placeholder="Name">
+        <input type="tel" name="mobile" required placeholder="*Mobile Number"><br>
+        <input type="email" name="mailId" placeholder="*Email ID" required>
+        <select name="travelmonth">
+            <option value="month of travel">Month of Travel</option>
+            <option value="aug2018">Aug2018</option>
+            <option value="sep2018">Sep2018</option>
+            <option value="oct2018">Oct2018</option>
+            <option value="nov2018">Nov2018</option>
+            <option value="dec2018">Dec2018</option>
+            <option value="jan2019">Jan2019</option>
+            <option value="feb2019">Feb2019</option>
+            <option value="mar2018">Mar2018</option>
+            <option value="apr2018">Apr2018</option>
+        </select>
+        <br>
+        <select name="package" required>
+            <option value="origin"> *Origin</option>
+        </select>
+        <input type="text" name=destination placeholder="Destination"><br>
+        <input type="submit" name="submit" value="Get A Call">
+        <input type="reset" name="clear" value="Clear">
+     
+	<h3><pre>
+Travel is the movement of people between distant geographical locations.
+Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip. 
+Travel can also include relatively short stays between successive movements, as in the case of tourism.
+	</pre></h3>
+	<P>
+</html>
